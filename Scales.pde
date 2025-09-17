@@ -4,7 +4,7 @@ void setup(){
 
 void draw() {
 try {
-  Thread.sleep(50);
+  Thread.sleep(200);
 } catch (InterruptedException e) {
   e.printStackTrace();
 }
@@ -39,6 +39,7 @@ curveVertex(x,(y+200/size));
 curveVertex(x,(y+200/size));
 endShape(); 
 }
+
 
 
 
