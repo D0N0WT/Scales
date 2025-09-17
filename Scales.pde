@@ -3,6 +3,11 @@ void setup(){
 }
 
 void draw() {
+try {
+  Thread.sleep(50);
+} catch (InterruptedException e) {
+  e.printStackTrace();
+}
   noStroke();
   for(int x = 0; x <= 1000; x +=50)
   {
@@ -14,7 +19,7 @@ void draw() {
 }
 
 void scales(int x, int y, int size){
-fill((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100));
+fill((int)(Math.random()*10),(int)(Math.random()*10),(int)(Math.random()*10));
 beginShape();
 curveVertex(x,y-(200/size));
 curveVertex(x,y-(200/size));
@@ -34,5 +39,6 @@ curveVertex(x,(y+200/size));
 curveVertex(x,(y+200/size));
 endShape(); 
 }
+
 
 
