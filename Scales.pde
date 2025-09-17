@@ -14,7 +14,7 @@ void draw() {
 }
 
 void scales(int x, int y, int size){
-fill((int)(Math.random()*10),(int)(Math.random()*10),(int)(Math.random()*10));
+fill((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100));
 beginShape();
 curveVertex(x,y-(200/size));
 curveVertex(x,y-(200/size));
@@ -34,4 +34,5 @@ curveVertex(x,(y+200/size));
 curveVertex(x,(y+200/size));
 endShape(); 
 }
+
 
